@@ -1,20 +1,13 @@
 /* font style  */
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 /* universal style  */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
-
 /* common style  */
-
 /* color  */
-
 .text-primary{
     color:rgb(254, 163, 1);
 }
@@ -33,12 +26,7 @@
 .dark-gray{
     color:rgb(128, 128, 128);
 }
-
-
 /* font size  */
-
-
-
 .text-one{
     font-size:1rem;
     font-weight: 700;
@@ -110,7 +98,6 @@
     background: rgb(93, 88, 239);
 }
 /* button  */
-
 .btn-primary{
     border:none;
     outline:none;
@@ -123,7 +110,6 @@
     padding:10px 20px;
     border-radius:25px;
 }
-
 .position{
     transform: translate(30px,-30px);
 }
@@ -131,9 +117,7 @@
 .display-flex{
     display: flex;
 }
-
 /* header section style  */
-
 #header-section,
 .curriculumn-container,
 .stories-container,
@@ -154,7 +138,6 @@ marquee {
     font-family: Quicksand;
     margin-top:10px;
 }
-
  /* nav-bar style  */
 .nav-bar,
 .header-band,
@@ -179,18 +162,15 @@ marquee {
 .fa-bars{
     display: none;
 }
-
 /* banner section style  */
 .banner{
     justify-content: center;
     align-items: center;
     gap:50px;
 }
-
 .banner .banner-description{
     margin:24px 0px;
 }
-
 /* curriculum section style  */
 .curriculum{
     background: url("../assets/bg.png");
@@ -201,7 +181,6 @@ marquee {
 .stories-title{
     text-align: center;
 }
-
 .curriculumn-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -246,19 +225,16 @@ marquee {
     flex-grow: 1; 
     margin: 0; 
 }
-
 .card-img{
     width: 135px;
     height:135px;
 }
-
 .fa-solid{
     padding:19px 22px;
     border-radius:50%;
     font-size:1.5rem;
     margin-right:5px;
 }
-
 /* stories  */
 .stories{
     background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -298,7 +274,6 @@ marquee {
 .box-description{
     padding:0px 60px 30px 0px;
 }
-
 .column-right .box-title{
     padding-right:30px;
 }
@@ -306,7 +281,6 @@ marquee {
     display: block;
     margin:80px auto 0px;
 }
-
 /* footer section style  */
 .footer-section{
     padding:130px 0 170px 0px;
@@ -325,7 +299,6 @@ marquee {
 .footer-item-three{
   padding-left:150px;
 }
-
 .footer-head{
     align-items:center;
     margin-bottom:35px;
@@ -337,7 +310,6 @@ marquee {
 .footer-about-title{
     margin-bottom:32px;
 }
-
 .footer-item-three{
     text-align: center;
 }
@@ -379,6 +351,9 @@ marquee {
     .stories-container,
     .footer-section{
         max-width: 100%;
+    }
+    #header-section{
+        padding-top:10px;
     }
     .display-none{
         display: none;
@@ -441,7 +416,6 @@ marquee {
     .footer-section{
         padding:60px 20px 50px    ;
     }
-
     .footer-container{
         grid-template-columns: repeat(1,1fr);
     }
@@ -453,5 +427,4 @@ marquee {
     .footer-item-three{
         text-align:start;
     }
-
 }
