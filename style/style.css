@@ -1,9 +1,184 @@
 /* font style  */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* universal style  */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+
+
+
+/* common style  */
+
+/* color  */
+
+.text-primary{
+    color:rgb(254, 163, 1);
+}
+.text-secondary{
+    color: rgb(1, 172, 253);
+}
+.text-tertiary{
+    color:rgb(5, 212, 223);
+}
+.text-quaternary{
+    color:rgb(93, 88, 239);
+}
+.light{
+    color:rgb(255, 255, 255);
+}
+.dark-gray{
+    color:rgb(128, 128, 128);
+}
+
+
+/* font size  */
+
+
+.text-one{
+    font-size:1rem;
+    font-weight: 500;
+    line-height: 28.3px;
+}
+.text-two{
+    font-size:1.25rem;
+    font-family: Quicksand;
+    font-weight: 600;
+    line-height: 30px;
+}
+.text-two-normal{
+    font-size:1.25rem;
+    font-family: Quicksand;
+    font-weight: 400;
+    line-height: 25px;
+}
+.text-three{
+    font-size:1.5rem;
+    font-weight: 700;
+    line-height: 38.35px;
+}
+.text-four{
+    font-size:2rem;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 30px;
+}
+.text-five{
+    font-size:2.8rem;
+    font-weight: 700;
+    line-height: 57.5px;
+}
+.text-six{
+    font-size: 3.5rem;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 61px;
+}
+/* background  */
+.bg-primary{
+    background: rgb(254, 163, 1);
+}
+.bg-secondary{
+    background: rgb(17, 17, 17);
+}
+/* button  */
+
+.btn-primary{
+    border:none;
+    outline:none;
+    border-radius: 8px;
+    padding:5px 40px;
+}
+/* flex  */
+.display-flex{
+    display: flex;
+}
+
+/* header section style  */
+
+#header-section{
+    max-width:75%;
+    margin:0 auto;
+    margin-top:20px;
+}
+ /* nav-bar style  */
+.nav-bar,
+.header-band,
+.nav-links{
+    align-items: center;
+}
+.nav-bar{
+    justify-content: space-between;
+}
+.header-band{
+    gap:10px;
+}
+.nav-links{
+    gap:50px;
+}
+.nav-link{
+    list-style: none;
+}
+.item{
+    text-decoration: none;
+}
+.fa-bars{
+    display: none;
+}
+
+/* banner section style  */
+.banner{
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.banner .banner-description{
+    margin:24px 0px;
+}
+
+
+/* responsive mobile device  */
+@media screen and (max-width:576px){
+    /* common style  */
+    .text-six{
+        font-size: 2.5rem;
+        font-family: Quicksand;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    
+    #header-section{
+        max-width: 100%;
+    }
+    .display-none{
+        display: none;
+    }
+    /* navigation style  */   
+    .nav-bar{
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        padding:10px 20px;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 2rem;
+    }
+
+    /* banner  */
+    .banner{
+        flex-direction: column-reverse;
+        gap:20px;
+        padding:10px 20px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-img{
+        width:100%;
+    }
 }
