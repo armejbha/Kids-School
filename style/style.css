@@ -66,14 +66,20 @@
 .text-three{
     font-size:1.5rem;
     font-family: Quicksand;
-    font-weight: 700;
-    line-height: 38.35px;
+    font-weight: 600;
+    line-height: 25px;
 }
 .text-four{
     font-size:2rem;
     font-family: Quicksand;
     font-weight: 700;
     line-height: 30px;
+}
+.text-four-special{
+    font-size:2rem;
+    font-family: Quicksand;
+    font-weight: 700;
+    line-height: 40px;
 }
 .text-five{
     font-size:2.8rem;
@@ -130,11 +136,25 @@
 
 #header-section,
 .curriculumn-container,
-.stories-container{
+.stories-container,
+.footer-section{
     max-width:75%;
     margin:0 auto;
-    margin-top:20px;
+    padding-top:20px;
 }
+/* marque style  */
+marquee {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding: 10px;
+    border:none;
+    outline:none;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Quicksand;
+    margin-top:10px;
+}
+
  /* nav-bar style  */
 .nav-bar,
 .header-band,
@@ -173,7 +193,8 @@
 
 /* curriculum section style  */
 .curriculum{
-    padding:50px 0px;
+    background: url("../assets/bg.png");
+    padding:60px 0px;
 }
 .curriculum-title,
 .arrow,
@@ -279,9 +300,53 @@
 }
 
 .column-right .box-title{
-    padding:40px 30px 30px 0px;
+    padding-right:30px;
+}
+.text-position{
+    display: block;
+    margin:80px auto 0px;
 }
 
+/* footer section style  */
+.footer-section{
+    padding:130px 0 170px 0px;
+}
+.footer-container{
+   display: grid;
+   grid-template-columns:repeat(3,1fr);
+   /* gap:150px;    */
+}
+.footer-head{
+    margin-left:-20px;
+}
+.footer-item-two{
+ padding-left:150px;
+}
+.footer-item-three{
+  padding-left:150px;
+}
+
+.footer-head{
+    align-items:center;
+    margin-bottom:35px;
+}
+.footer-item-two ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footer-about-title{
+    margin-bottom:32px;
+}
+
+.footer-item-three{
+    text-align: center;
+}
+.footer-social-title{
+    margin-bottom: 32px;
+}
+.social img{
+    margin-right:10px;
+}
 /* responsive mobile device  */
 @media screen and (max-width:576px){
     /* common style  */
@@ -297,6 +362,12 @@
         font-family: Quicksand;
         line-height: 57.5px;
     }
+    .text-four-special{
+        font-size:2rem;
+        font-family: Quicksand;
+        font-weight: 700;
+        line-height: 40px;
+    }
     .text-six{
         font-size: 2.5rem;
         font-family: Quicksand;
@@ -305,7 +376,8 @@
     }
     #header-section,
     .curriculumn-container,
-    .stories-container{
+    .stories-container,
+    .footer-section{
         max-width: 100%;
     }
     .display-none{
@@ -318,7 +390,7 @@
         border-radius:25px;
     }
     .position{
-        transform: translate(20px,-30px);
+        transform: translate(20px,-25px);
     }
     /* navigation style  */   
     .nav-bar{
@@ -329,7 +401,6 @@
         display: block;
         font-size: 2rem;
     }
-
     /* banner  */
     .banner{
         flex-direction: column-reverse;
@@ -342,7 +413,6 @@
     .banner-img{
         width:100%;
     }
-
     /* curriculum */
     .curriculumn-container{
         grid-template-columns: repeat(1,1fr);
@@ -352,7 +422,6 @@
     .card{
         width: 100%;
     }
-
     /* stories  */
     .stories{
         padding:20px 0px;
@@ -368,5 +437,21 @@
     .column-right .box-title{
         padding:20px 15px 20px 0px;
     }
-    
+    /* footer section style  */
+    .footer-section{
+        padding:60px 20px 50px    ;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-item-two,
+    .footer-item-three{
+     margin-top:32px;
+     padding-left:0px;
+    }   
+    .footer-item-three{
+        text-align:start;
+    }
+
 }
